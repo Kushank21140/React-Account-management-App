@@ -1,67 +1,68 @@
-Project Overview
+# React Account Management Application
 
-This application uses React Context API along with localStorage to store and manage user data created during registration. The combination of Context and localStorage ensures that user information persists even after page reloads while maintaining centralized state management.
+## Project Overview
 
-Application Flow
+This application uses **React Context API** along with **localStorage** to store and manage user data created during registration.  
+The combination of Context and localStorage ensures that user information persists even after a page reload while keeping authentication and user state centralized.
 
-The application consists of three main pages from a user perspective:
+---
 
-Login Page
+## Application Flow
 
-Registration Page
+The application consists of **three main pages** from a user perspective:
 
-Home (Account) Page
+1. Login Page  
+2. Registration Page  
+3. Home (Account) Page  
 
-Login Page
+---
 
-The application starts on the Login page.
+## Login Page
 
-Users can log in using their registered email and password.
+- The application starts on the **Login page**.
+- Users can log in using their registered email and password.
+- On successful login, the user is redirected to the **Home page**.
+- A **Register link** is provided for users who do not have an account, allowing navigation to the Registration page.
 
-Upon successful login, the user is redirected to the Home page.
+---
 
-A Register link is provided for users who do not have an account, allowing navigation to the Registration page.
+## Registration Page
 
-Registration Page
+- Users can create a new account by filling in the required details.
+- Form validation is implemented to ensure correct input.
+- A **Login link** is available for users who already have an account, allowing them to navigate back to the Login page.
+- After successful registration, users can log in using their credentials.
 
-Users can create a new account by filling in the required details.
+---
 
-Form validations ensure that all inputs meet the required criteria.
+## Home (Account) Page
 
-A Login link is available for users who already have an account, allowing them to navigate back to the Login page.
+- Displays the same fields as the Registration page.
+- Users can **edit and update their personal information**.
+- The **email field is read-only**, as it acts as the unique identifier for each user.
+- Updated information can be saved using the **Update** button.
+- A **Logout** button is provided, which logs the user out and redirects them back to the Login page.
 
-After successful registration, users can log in using their credentials.
+---
 
-Home (Account) Page
+## Route Protection
 
-Displays the same fields as the Registration page.
+- A **Protected Route (Route Guard)** is implemented.
+- Users cannot access the Home page without logging in.
+- If a user attempts to access the Home page directly without authentication, they are redirected to the Login page.
 
-Users can edit and update their personal information.
+---
 
-The email field is read-only, as it serves as the unique identifier for the user.
+## Notes
 
-Changes can be saved using the Update button.
+- This project uses **client-side storage** for authentication and user management.
+- Passwords are stored in plain text for demonstration purposes only.
+- This implementation is intended for **learning and internship evaluation purposes**, not for production use.
 
-A Logout button is provided, which logs the user out and redirects them back to the Login page.
+---
 
-Route Protection
-
-A Protected Route (Route Guard) is implemented to prevent unauthorized access.
-
-Users cannot access the Home page without logging in.
-
-If a user attempts to access the Home page directly, they are redirected to the Login page.
-
-Notes
-
-This project uses client-side storage for authentication and user management.
-
-Passwords are stored in plain text for demonstration purposes only.
-
-This implementation is intended for learning and internship evaluation purposes, not for production use.
-
-Contact
+## Contact
 
 For any questions or clarifications, feel free to contact:
 
-📧 kushankmistry@gmail.com
+📧 **kushankmistry@gmail.com**
